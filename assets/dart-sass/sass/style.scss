@@ -9,14 +9,10 @@ body {
 
 h1, h2 {
     font-family: 'Lora';
-    text-align: center;
     font-weight: 600;
     font-size: 36px;
-}
-
-h2 {
-    font-weight: 400;
-    padding-top: 10px;
+    padding: 0 20px;
+    margin-top: 50px;
 }
 
 hr {
@@ -31,7 +27,18 @@ p, #header {
 
 #header {
     margin-bottom: 10px;
-    
+
+    h1, h2{
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    h2 {
+        font-weight: 400;
+        padding-top: 10px;
+    }
+
     .head{
         padding-top: 10px;
         margin-bottom: 50px;
