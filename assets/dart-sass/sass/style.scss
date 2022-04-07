@@ -109,6 +109,18 @@ p, #header {
         width: 25px;
         background-color: white;
         overflow: hidden;
+
+        &:nth-child(1) {
+            top: 20%;
+        }
+
+        &:nth-child(2) {
+            top: 40%;
+        }
+
+        &:nth-child(3) {
+            top: 60%;
+        }
     }
 }
 

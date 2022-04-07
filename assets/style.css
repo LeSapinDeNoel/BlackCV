@@ -143,6 +143,15 @@ p, #header {
   background-color: white;
   overflow: hidden;
 }
+.menu_burger_style .line:nth-child(1) {
+  top: 20%;
+}
+.menu_burger_style .line:nth-child(2) {
+  top: 40%;
+}
+.menu_burger_style .line:nth-child(3) {
+  top: 60%;
+}
 
 /* Fin du Menu Burger */
 #profile {
