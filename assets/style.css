@@ -122,6 +122,29 @@ p, #header {
   z-index: 0;
 }
 
+/* Menu Burger */
+#menu_burger {
+  appearance: none;
+  position: absolute;
+}
+
+.menu_burger_style {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: block;
+  outline: none;
+  cursor: pointer;
+}
+.menu_burger_style .line {
+  position: absolute;
+  height: 1.5px;
+  width: 25px;
+  background-color: white;
+  overflow: hidden;
+}
+
+/* Fin du Menu Burger */
 #profile {
   margin-bottom: 50px;
 }
