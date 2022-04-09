@@ -181,3 +181,66 @@ p, #header {
         margin-left: 10px;
     }
 }
+
+#experience {
+    h2 {
+        font-size: 30px;
+        line-height: 38px;
+        text-align: right;
+    }
+
+    h3 {
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: lighter;
+        font-size: 24px;
+        line-height: 31px;
+        text-align: right;
+        padding: 0 20px;
+
+        span {
+            display: block;
+        }
+    }
+
+    .service_mjc {
+        .year {
+            padding-left: 30px;
+    
+            &:before {
+                content: "";
+                width: 100px;
+                height: 1px;
+                background-color: white;
+                position: absolute;
+            }
+    
+            &:after {
+                content: "";
+                width: 1px;
+                height: 100px;
+                background-color: white;
+                position: absolute;
+                left: 15px;
+                top: 740px;
+            }
+        }
+
+        .img_mjc {
+            text-align: right;
+            margin-top: 50px;
+            margin-right: 20px;
+        }
+
+        p {
+            font-family: 'Mukta';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 23px;
+            text-align: right;
+            margin-right: 20px;
+            margin-top: 10px;
+        }
+    }
+}
