@@ -212,6 +212,13 @@ p, #header {
 #experience h3 span {
   display: block;
 }
+#experience .year {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 22px;
+}
 #experience .year:before {
   content: "";
   width: 100px;
@@ -236,11 +243,11 @@ p, #header {
   margin-top: 30px;
 }
 #experience .article_service_mjc .year:before {
-  top: 765px;
+  top: 785px;
   left: 5px;
 }
 #experience .article_service_mjc .year:after {
-  top: 750px;
+  top: 770px;
   left: 20px;
 }
 #experience .article_service_mjc .img_mjc {
@@ -270,11 +277,11 @@ p, #header {
   margin-top: 30px;
 }
 #experience .article_dev_web .year:before {
-  top: 1225px;
+  top: 1240px;
   right: 5px;
 }
 #experience .article_dev_web .year:after {
-  top: 1210px;
+  top: 1225px;
   right: 20px;
 }
 
