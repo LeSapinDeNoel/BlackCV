@@ -207,50 +207,75 @@ p, #header {
   font-weight: lighter;
   font-size: 24px;
   line-height: 31px;
-  text-align: right;
   padding: 0 20px;
 }
 #experience h3 span {
   display: block;
 }
-#experience .service_mjc .year {
-  padding-left: 30px;
-  margin-top: 30px;
-}
-#experience .service_mjc .year:before {
+#experience .year:before {
   content: "";
   width: 100px;
   height: 1px;
   background-color: white;
   position: absolute;
-  top: 765px;
-  left: 5px;
   z-index: 0;
 }
-#experience .service_mjc .year:after {
+#experience .year:after {
   content: "";
   width: 1px;
   height: 100px;
   background-color: white;
   position: absolute;
-  left: 20px;
-  top: 750px;
   z-index: 0;
 }
-#experience .service_mjc .img_mjc {
+#experience .article_service_mjc h3 {
+  text-align: right;
+}
+#experience .article_service_mjc .year {
+  padding-left: 30px;
+  margin-top: 30px;
+}
+#experience .article_service_mjc .year:before {
+  top: 765px;
+  left: 5px;
+}
+#experience .article_service_mjc .year:after {
+  top: 750px;
+  left: 20px;
+}
+#experience .article_service_mjc .img_mjc {
   text-align: right;
   margin-top: 50px;
   margin-right: 20px;
 }
-#experience .service_mjc p {
+#experience .article_service_mjc p {
   font-family: "Mukta";
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 23px;
   text-align: right;
   margin-right: 20px;
   margin-top: 10px;
+}
+#experience .article_dev_web {
+  margin-top: 50px;
+}
+#experience .article_dev_web h3 {
+  text-align: left;
+}
+#experience .article_dev_web .year {
+  text-align: right;
+  padding-right: 30px;
+  margin-top: 30px;
+}
+#experience .article_dev_web .year:before {
+  top: 1225px;
+  right: 5px;
+}
+#experience .article_dev_web .year:after {
+  top: 1210px;
+  right: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
