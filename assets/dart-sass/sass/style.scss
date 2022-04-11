@@ -66,7 +66,7 @@ p, #header {
     background-color: black;
     padding-top: 50px;
     display: none;
-    z-index: 0;
+    z-index: 1;
 
     a {
         color: white;
@@ -206,6 +206,7 @@ p, #header {
     .service_mjc {
         .year {
             padding-left: 30px;
+            margin-top: 30px;
     
             &:before {
                 content: "";
@@ -213,6 +214,9 @@ p, #header {
                 height: 1px;
                 background-color: white;
                 position: absolute;
+                top: 765px;
+                left: 5px;
+                z-index: 0;
             }
     
             &:after {
@@ -221,8 +225,9 @@ p, #header {
                 height: 100px;
                 background-color: white;
                 position: absolute;
-                left: 15px;
-                top: 740px;
+                left: 20px;
+                top: 750px;
+                z-index: 0;
             }
         }
 
