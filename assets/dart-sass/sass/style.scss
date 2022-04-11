@@ -183,6 +183,8 @@ p, #header {
 }
 
 #experience {
+    margin-bottom: 30px;
+
     h2 {
         font-size: 30px;
         line-height: 38px;
@@ -200,6 +202,15 @@ p, #header {
         span {
             display: block;
         }
+    }
+
+    p {
+        font-family: 'Mukta';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 23px;
+        margin-top: 10px;
     }
 
     .year {
@@ -251,19 +262,13 @@ p, #header {
 
         .img_mjc {
             text-align: right;
-            margin-top: 50px;
+            margin-top: 20px;
             margin-right: 20px;
         }
 
         p {
-            font-family: 'Mukta';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 23px;
             text-align: right;
             margin-right: 20px;
-            margin-top: 10px;
         }
     }
 
@@ -280,14 +285,24 @@ p, #header {
             margin-top: 30px;
 
             &:before {
-                top: 1240px;
+                top: 1215px;
                 right: 5px;
             }
     
             &:after {
-                top: 1225px;
+                top: 1200px;
                 right: 20px;
             }
+        }
+
+        .img_cci {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        p {
+            text-align: left;
+            margin-left: 20px;
         }
     }
 }

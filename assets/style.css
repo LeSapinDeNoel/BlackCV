@@ -196,6 +196,9 @@ p, #header {
   margin-left: 10px;
 }
 
+#experience {
+  margin-bottom: 30px;
+}
 #experience h2 {
   font-size: 30px;
   line-height: 38px;
@@ -211,6 +214,14 @@ p, #header {
 }
 #experience h3 span {
   display: block;
+}
+#experience p {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  margin-top: 10px;
 }
 #experience .year {
   font-family: "Mukta";
@@ -252,18 +263,12 @@ p, #header {
 }
 #experience .article_service_mjc .img_mjc {
   text-align: right;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-right: 20px;
 }
 #experience .article_service_mjc p {
-  font-family: "Mukta";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 23px;
   text-align: right;
   margin-right: 20px;
-  margin-top: 10px;
 }
 #experience .article_dev_web {
   margin-top: 50px;
@@ -277,12 +282,20 @@ p, #header {
   margin-top: 30px;
 }
 #experience .article_dev_web .year:before {
-  top: 1240px;
+  top: 1215px;
   right: 5px;
 }
 #experience .article_dev_web .year:after {
-  top: 1225px;
+  top: 1200px;
   right: 20px;
+}
+#experience .article_dev_web .img_cci {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+#experience .article_dev_web p {
+  text-align: left;
+  margin-left: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
