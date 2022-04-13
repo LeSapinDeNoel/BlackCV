@@ -179,6 +179,9 @@ p, #header {
 #profile {
   margin-bottom: 50px;
 }
+#profile .detail_profile {
+  height: 160px;
+}
 #profile img {
   width: 130px;
   height: 130px;
@@ -198,6 +201,9 @@ p, #header {
 
 #experience {
   margin-bottom: 30px;
+}
+#experience .detail_mjc {
+  height: 246px;
 }
 #experience h2 {
   font-size: 30px;
