@@ -303,5 +303,8 @@ p, #header {
   text-align: left;
   margin-left: 20px;
 }
+#experience #wrapper_techno {
+  display: grid;
+}
 
 /*# sourceMappingURL=style.css.map */
