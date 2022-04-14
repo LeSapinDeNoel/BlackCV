@@ -361,4 +361,11 @@ p, #header {
   line-height: 46px;
 }
 
+#diplome h2 {
+  font-size: 30px;
+}
+#diplome .diplome_list {
+  margin: 20px 0;
+}
+
 /*# sourceMappingURL=style.css.map */
