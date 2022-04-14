@@ -15,6 +15,15 @@ h1, h2 {
     margin-top: 50px;
 }
 
+h3 {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 24px;
+    line-height: 31px;
+    padding: 0 20px;
+}
+
 hr {
     background-color: white;
     width: 96%;
@@ -199,17 +208,8 @@ p, #header {
         text-align: right;
     }
 
-    h3 {
-        font-family: 'Lora';
-        font-style: normal;
-        font-weight: lighter;
-        font-size: 24px;
-        line-height: 31px;
-        padding: 0 20px;
-
-        span {
-            display: block;
-        }
+    h3 span {
+        display: block;
     }
 
     p {
@@ -314,9 +314,67 @@ p, #header {
         }
     }
 
-    #wrapper_techno {
-        display: grid;
-        margin: 50px 0 20px;
-        width: 320px;
+}
+
+#wrapper_techno {
+    display: grid;
+    gap: 20px;
+    grid-template-rows: auto;
+    width: 320px;
+    height: auto;
+    margin: 50px auto;
+
+    .cube {
+        width: 150px;
+        height: 150px;
+        border: 1px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .one {
+        grid-column: 1;
+        grid-row: 1;
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+    .two {
+        grid-column: 1;
+        grid-row: 2;
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+    .three {
+        grid-column: 1;
+        grid-row: 3;
+        font-size: 24px;
+        line-height: 31px;
+    }
+
+    .four {
+        grid-column: 2;
+        grid-row: 1;
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+    .five {
+        grid-column: 2;
+        grid-row: 2;
+        font-size: 24px;
+        line-height: 31px;
+    }
+
+    .six {
+        grid-column: 2;
+        grid-row: 3;
+        font-size: 36px;
+        line-height: 46px;
     }
 }
