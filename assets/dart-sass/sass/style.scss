@@ -34,6 +34,11 @@ p, #header {
     font-family: 'Mukta';
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 #header {
     margin-bottom: 10px;
 
@@ -78,8 +83,6 @@ p, #header {
     z-index: 1;
 
     a {
-        color: white;
-        text-decoration: none;
         font-weight: 200;
         font-size: 48px;
     }
@@ -385,6 +388,46 @@ p, #header {
     }
 
     .diplome_list {
-        margin: 20px 0;
+        margin: 20px 10px;
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+        text-align: center;
+
+        div {
+            border: 1px solid white;
+            height: auto;
+            margin: 5px 0;
+            padding: 5px;
+        }
+    }
+}
+
+#footer {
+    h2 {
+        font-size: 30px;
+        text-align: right;
+    }
+
+    .footer_mail {
+        font-family: 'Lora';
+        font-style: italic;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 31px;
+        margin: 20px 10px;
+        text-align: right;
+    }
+
+    p {
+        font-family: 'Mukta';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 23px;
+        text-align: center;
+        margin: 20px 0 10px;
     }
 }
