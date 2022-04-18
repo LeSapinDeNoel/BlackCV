@@ -516,6 +516,11 @@ a {
     font-size: 36px;
     line-height: 46px;
   }
+
+  #footer .footer_mail {
+    text-align: center;
+    margin: 50px 0 70px;
+  }
 }
 @media screen and (min-width: 1024px) {
   #header .head {
@@ -578,6 +583,13 @@ a {
     font-size: 24px;
     padding-left: 20px;
   }
+  main #experience h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  main #experience h3 {
+    font-size: 36px;
+  }
   main #experience .article_service_mjc .detail_mjc p {
     font-size: 24px;
   }
@@ -591,11 +603,11 @@ a {
     width: 400px;
   }
   main #experience .article_service_mjc .year:before {
-    top: 1330px;
+    top: 1350px;
     width: 150px;
   }
   main #experience .article_service_mjc .year:after {
-    top: 1315px;
+    top: 1335px;
     height: 150px;
   }
   main #experience .article_dev_web p {
@@ -605,12 +617,65 @@ a {
     width: 400px;
   }
   main #experience .article_dev_web .year:before {
-    top: 1875px;
+    top: 1895px;
     width: 150px;
   }
   main #experience .article_dev_web .year:after {
-    top: 1860px;
+    top: 1880px;
     height: 150px;
+  }
+  main #diplome h2 {
+    font-size: 48px;
+  }
+  main #diplome .diplome_list {
+    width: 60%;
+    margin-right: auto;
+    overflow: hidden;
+  }
+  main #diplome .diplome_list div {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1101px) {
+  main #wrapper_techno {
+    gap: 40px;
+    width: 756px;
+  }
+  main #wrapper_techno .one {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 36px;
+    line-height: 46px;
+  }
+  main #wrapper_techno .two {
+    grid-column: 3;
+    grid-row: 1;
+    font-size: 36px;
+    line-height: 46px;
+  }
+  main #wrapper_techno .three {
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 24px;
+    line-height: 31px;
+  }
+  main #wrapper_techno .four {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 36px;
+    line-height: 46px;
+  }
+  main #wrapper_techno .five {
+    grid-column: 4;
+    grid-row: 2;
+    font-size: 24px;
+    line-height: 31px;
+  }
+  main #wrapper_techno .six {
+    grid-column: 3;
+    grid-row: 2;
+    font-size: 36px;
+    line-height: 46px;
   }
 }
 

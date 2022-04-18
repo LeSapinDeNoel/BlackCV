@@ -578,6 +578,13 @@ a {
             line-height: 46px;
         }
     }
+
+    #footer {
+        .footer_mail {
+            text-align: center;
+            margin: 50px 0 70px;
+        }
+    }
 }
 
 @media screen and (min-width: 1024px){
@@ -660,6 +667,14 @@ a {
         }
 
         #experience {
+            h2 {
+                font-size: 48px;
+                margin-bottom: 20px;
+            }
+
+            h3 {
+                font-size: 36px;
+            }
 
             .article_service_mjc .detail_mjc {
                 p {
@@ -682,12 +697,12 @@ a {
 
                 .year {
                     &:before {
-                        top: 1330px;
+                        top: 1350px;
                         width: 150px;
                     }
             
                     &:after {
-                        top: 1315px;
+                        top: 1335px;
                         height: 150px;
                     }
                 }
@@ -704,18 +719,84 @@ a {
 
                 .year {
                     &:before {
-                        top: 1875px;
+                        top: 1895px;
                         width: 150px;
                     }
             
                     &:after {
-                        top: 1860px;
+                        top: 1880px;
                         height: 150px;
                     }
                 }
             }
         }
+
+        #diplome {
+            h2 {
+                font-size: 48px;
+            }
+
+            .diplome_list {
+                width: 60%;
+                margin-right: auto;
+                overflow: hidden;
+
+                div {
+                    margin-bottom: 10px;
+                }
+            }
+        }
     }
+}
 
+@media screen and (min-width: 1101px) {
 
+    main {
+        #wrapper_techno {
+            gap: 40px;
+            width: 756px;
+    
+            .one {
+                grid-column: 1;
+                grid-row: 1;
+                font-size: 36px;
+                line-height: 46px;
+            }
+        
+            .two {
+                grid-column: 3;
+                grid-row: 1;
+                font-size: 36px;
+                line-height: 46px;
+            }
+        
+            .three {
+                grid-column: 2;
+                grid-row: 2;
+                font-size: 24px;
+                line-height: 31px;
+            }
+        
+            .four {
+                grid-column: 2;
+                grid-row: 1;
+                font-size: 36px;
+                line-height: 46px;
+            }
+        
+            .five {
+                grid-column: 4;
+                grid-row: 2;
+                font-size: 24px;
+                line-height: 31px;
+            }
+        
+            .six {
+                grid-column: 3;
+                grid-row: 2;
+                font-size: 36px;
+                line-height: 46px;
+            }
+        }
+    }
 }
