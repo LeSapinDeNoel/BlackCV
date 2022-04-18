@@ -505,5 +505,43 @@ a {
     line-height: 46px;
   }
 }
+@media screen and (min-width: 1024px) {
+  #header .head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #header .head span {
+    font-size: 32px;
+    display: block;
+  }
+  #header .head input, #header .head label {
+    display: none;
+  }
+  #header .head #menu {
+    position: relative;
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 0;
+    background-color: transparent;
+  }
+  #header .head #menu a {
+    font-style: normal;
+    font-weight: 275;
+    font-size: 32px;
+    line-height: 53px;
+    padding: 0 15px;
+  }
+  #header .head #menu ul {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    padding-right: 15px;
+  }
+  #header .head #menu hr {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
