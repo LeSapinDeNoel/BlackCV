@@ -280,9 +280,10 @@ a {
   left: 20px;
 }
 #experience .article_service_mjc .img_mjc {
-  text-align: right;
+  width: 269px;
   margin-top: 20px;
   margin-right: 20px;
+  margin-left: auto;
 }
 #experience .article_service_mjc p {
   text-align: right;
@@ -308,6 +309,7 @@ a {
   right: 20px;
 }
 #experience .article_dev_web .img_cci {
+  width: 268px;
   margin-top: 20px;
   margin-left: 20px;
 }
@@ -437,6 +439,7 @@ a {
     transform: translateX(0%);
   }
 }
+/* Responsive */
 @media screen and (min-width: 768px) {
   #profile {
     width: 85%;
@@ -451,17 +454,26 @@ a {
     font-size: 14px;
   }
 
+  #experience h3 span {
+    display: inline;
+  }
   #experience .detail_mjc, #experience .detail_dev_web {
     width: 85%;
     margin: 50px 0;
     margin-left: auto;
     margin-right: auto;
   }
+  #experience .article_service_mjc .year:before {
+    top: 1075px;
+  }
+  #experience .article_service_mjc .year:after {
+    top: 1060px;
+  }
   #experience .article_dev_web .year:before {
-    top: 1565px;
+    top: 1503px;
   }
   #experience .article_dev_web .year:after {
-    top: 1550px;
+    top: 1488px;
   }
 
   #wrapper_techno {
@@ -544,6 +556,61 @@ a {
   }
   #header .body {
     margin: 250px 0;
+  }
+  #header .body h1, #header .body h2 {
+    font-size: 48px;
+  }
+  #header .header_techno {
+    font-size: 14px;
+  }
+
+  main h2 {
+    font-size: 48px;
+  }
+  main #profile {
+    height: 308px;
+  }
+  main #profile .detail_profile img {
+    width: 200px;
+    height: 200px;
+  }
+  main #profile .detail_profile p {
+    font-size: 24px;
+    padding-left: 20px;
+  }
+  main #experience .article_service_mjc .detail_mjc p {
+    font-size: 24px;
+  }
+  main #experience .year {
+    font-size: 20px;
+  }
+  main #experience .article_service_mjc .detail_mjc {
+    height: 360px;
+  }
+  main #experience .article_service_mjc .img_mjc {
+    width: 400px;
+  }
+  main #experience .article_service_mjc .year:before {
+    top: 1330px;
+    width: 150px;
+  }
+  main #experience .article_service_mjc .year:after {
+    top: 1315px;
+    height: 150px;
+  }
+  main #experience .article_dev_web p {
+    font-size: 24px;
+  }
+  main #experience .article_dev_web .img_cci {
+    width: 400px;
+  }
+  main #experience .article_dev_web .year:before {
+    top: 1875px;
+    width: 150px;
+  }
+  main #experience .article_dev_web .year:after {
+    top: 1860px;
+    height: 150px;
   }
 }
 

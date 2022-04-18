@@ -284,9 +284,10 @@ a {
         }
 
         .img_mjc {
-            text-align: right;
+            width: 269px;
             margin-top: 20px;
             margin-right: 20px;
+            margin-left: auto;
         }
 
         p {
@@ -319,6 +320,7 @@ a {
         }
 
         .img_cci {
+            width: 268px;
             margin-top: 20px;
             margin-left: 20px;
         }
@@ -473,6 +475,8 @@ a {
     }
 }
 
+/* Responsive */
+
 @media screen and (min-width: 768px){
 
     #profile {
@@ -491,6 +495,11 @@ a {
     }
 
     #experience {
+
+        h3 span {
+            display: inline;
+        }
+
         .detail_mjc, .detail_dev_web {
             width: 85%;
             margin: 50px 0;
@@ -498,14 +507,26 @@ a {
             margin-right: auto;
         }
 
-        .article_dev_web {
+        .article_service_mjc {
             .year {
                 &:before {
-                    top: 1565px;
+                    top: 1075px;
                 }
         
                 &:after {
-                    top: 1550px;
+                    top: 1060px;
+                }
+            }
+        }
+
+        .article_dev_web {
+            .year {
+                &:before {
+                    top: 1503px;
+                }
+        
+                &:after {
+                    top: 1488px;
                 }
             }
         }
@@ -605,6 +626,96 @@ a {
 
         .body {
             margin: 250px 0;
+            
+            h1, h2 {
+                font-size: 48px;
+            }
+        }
+
+        .header_techno {
+            font-size: 14px;
         }
     }
+
+    main {
+        h2 {
+            font-size: 48px;
+        }
+
+        #profile {
+            height: 308px;
+
+            .detail_profile {
+
+                img {
+                    width: 200px;
+                    height: 200px;
+                }
+
+                p {
+                    font-size: 24px;
+                    padding-left: 20px;
+                }
+            }
+        }
+
+        #experience {
+
+            .article_service_mjc .detail_mjc {
+                p {
+                    font-size: 24px;
+                }
+            }
+
+            .year {
+                font-size: 20px;
+            }
+
+            .article_service_mjc {
+                .detail_mjc {
+                    height: 360px;
+                }
+
+                .img_mjc {
+                    width: 400px;
+                }
+
+                .year {
+                    &:before {
+                        top: 1330px;
+                        width: 150px;
+                    }
+            
+                    &:after {
+                        top: 1315px;
+                        height: 150px;
+                    }
+                }
+            }
+
+            .article_dev_web {
+                p {
+                    font-size: 24px;
+                }
+
+                .img_cci {
+                    width: 400px;
+                }
+
+                .year {
+                    &:before {
+                        top: 1875px;
+                        width: 150px;
+                    }
+            
+                    &:after {
+                        top: 1860px;
+                        height: 150px;
+                    }
+                }
+            }
+        }
+    }
+
+
 }
