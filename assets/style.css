@@ -542,6 +542,9 @@ a {
   #header .head #menu hr {
     display: none;
   }
+  #header .body {
+    margin: 250px 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
