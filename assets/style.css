@@ -248,7 +248,7 @@ a {
   font-size: 13px;
   line-height: 22px;
 }
-#experience .year:before {
+#experience .year::before {
   content: "";
   width: 100px;
   height: 1px;
@@ -256,7 +256,7 @@ a {
   position: absolute;
   z-index: 0;
 }
-#experience .year:after {
+#experience .year::after {
   content: "";
   width: 1px;
   height: 100px;
@@ -271,11 +271,11 @@ a {
   padding-left: 30px;
   margin-top: 30px;
 }
-#experience .article_service_mjc .year:before {
+#experience .article_service_mjc .year::before {
   top: 1105px;
   left: 5px;
 }
-#experience .article_service_mjc .year:after {
+#experience .article_service_mjc .year::after {
   top: 1090px;
   left: 20px;
 }
@@ -300,11 +300,11 @@ a {
   padding-right: 30px;
   margin-top: 30px;
 }
-#experience .article_dev_web .year:before {
+#experience .article_dev_web .year::before {
   top: 1535px;
   right: 5px;
 }
-#experience .article_dev_web .year:after {
+#experience .article_dev_web .year::after {
   top: 1520px;
   right: 20px;
 }
@@ -463,16 +463,16 @@ a {
     margin-left: auto;
     margin-right: auto;
   }
-  #experience .article_service_mjc .year:before {
+  #experience .article_service_mjc .year::before {
     top: 1075px;
   }
-  #experience .article_service_mjc .year:after {
+  #experience .article_service_mjc .year::after {
     top: 1060px;
   }
-  #experience .article_dev_web .year:before {
+  #experience .article_dev_web .year::before {
     top: 1503px;
   }
-  #experience .article_dev_web .year:after {
+  #experience .article_dev_web .year::after {
     top: 1488px;
   }
 
@@ -527,6 +527,10 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
   }
   #header .head span {
     font-size: 32px;
@@ -549,6 +553,10 @@ a {
     font-size: 32px;
     line-height: 53px;
     padding: 0 15px;
+    transition: 0.4s;
+  }
+  #header .head #menu a:hover {
+    font-weight: 500;
   }
   #header .head #menu ul {
     display: flex;
@@ -602,11 +610,11 @@ a {
   main #experience .article_service_mjc .img_mjc {
     width: 400px;
   }
-  main #experience .article_service_mjc .year:before {
+  main #experience .article_service_mjc .year::before {
     top: 1350px;
     width: 150px;
   }
-  main #experience .article_service_mjc .year:after {
+  main #experience .article_service_mjc .year::after {
     top: 1335px;
     height: 150px;
   }
@@ -616,11 +624,11 @@ a {
   main #experience .article_dev_web .img_cci {
     width: 400px;
   }
-  main #experience .article_dev_web .year:before {
+  main #experience .article_dev_web .year::before {
     top: 1895px;
     width: 150px;
   }
-  main #experience .article_dev_web .year:after {
+  main #experience .article_dev_web .year::after {
     top: 1880px;
     height: 150px;
   }
@@ -637,6 +645,29 @@ a {
   }
 }
 @media screen and (min-width: 1101px) {
+  main #profile {
+    height: 400px;
+  }
+  main #profile .detail_profile img {
+    width: 300px;
+    height: 300px;
+  }
+  main #experience .article_service_mjc .year::before {
+    top: 1440px;
+    width: 150px;
+  }
+  main #experience .article_service_mjc .year::after {
+    top: 1425px;
+    height: 150px;
+  }
+  main #experience .article_dev_web .year::before {
+    top: 1985px;
+    width: 150px;
+  }
+  main #experience .article_dev_web .year::after {
+    top: 1970px;
+    height: 150px;
+  }
   main #wrapper_techno {
     gap: 40px;
     width: 756px;

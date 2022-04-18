@@ -243,7 +243,7 @@ a {
         font-size: 13px;
         line-height: 22px;
 
-        &:before {
+        &::before {
             content: "";
             width: 100px;
             height: 1px;
@@ -252,7 +252,7 @@ a {
             z-index: 0;
         }
 
-        &:after {
+        &::after {
             content: "";
             width: 1px;
             height: 100px;
@@ -272,12 +272,12 @@ a {
             padding-left: 30px;
             margin-top: 30px;
     
-            &:before {
+            &::before {
                 top: 1105px;
                 left: 5px;
             }
     
-            &:after {
+            &::after {
                 top: 1090px;
                 left: 20px;
             }
@@ -308,12 +308,12 @@ a {
             padding-right: 30px;
             margin-top: 30px;
 
-            &:before {
+            &::before {
                 top: 1535px;
                 right: 5px;
             }
     
-            &:after {
+            &::after {
                 top: 1520px;
                 right: 20px;
             }
@@ -509,11 +509,11 @@ a {
 
         .article_service_mjc {
             .year {
-                &:before {
+                &::before {
                     top: 1075px;
                 }
         
-                &:after {
+                &::after {
                     top: 1060px;
                 }
             }
@@ -521,11 +521,11 @@ a {
 
         .article_dev_web {
             .year {
-                &:before {
+                &::before {
                     top: 1503px;
                 }
         
-                &:after {
+                &::after {
                     top: 1488px;
                 }
             }
@@ -593,6 +593,11 @@ a {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: black;
+
             span {
                 font-size: 32px;
                 display: block;
@@ -616,6 +621,11 @@ a {
                     font-size: 32px;
                     line-height: 53px;
                     padding: 0 15px;
+                    transition: 0.4s;
+
+                    &:hover {
+                        font-weight: 500;
+                    }
                 }
 
                 ul {
@@ -696,12 +706,12 @@ a {
                 }
 
                 .year {
-                    &:before {
+                    &::before {
                         top: 1350px;
                         width: 150px;
                     }
             
-                    &:after {
+                    &::after {
                         top: 1335px;
                         height: 150px;
                     }
@@ -718,12 +728,12 @@ a {
                 }
 
                 .year {
-                    &:before {
+                    &::before {
                         top: 1895px;
                         width: 150px;
                     }
             
-                    &:after {
+                    &::after {
                         top: 1880px;
                         height: 150px;
                     }
@@ -752,6 +762,48 @@ a {
 @media screen and (min-width: 1101px) {
 
     main {
+
+        #profile {
+            height: 400px;
+
+            .detail_profile{
+                img {
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+        }
+
+        #experience {
+            .article_service_mjc {
+                .year {
+                    &::before {
+                        top: 1440px;
+                        width: 150px;
+                    }
+            
+                    &::after {
+                        top: 1425px;
+                        height: 150px;
+                    }
+                }
+            }
+
+            .article_dev_web {
+                .year {
+                    &::before {
+                        top: 1985px;
+                        width: 150px;
+                    }
+            
+                    &::after {
+                        top: 1970px;
+                        height: 150px;
+                    }
+                }
+            }
+        }
+
         #wrapper_techno {
             gap: 40px;
             width: 756px;
