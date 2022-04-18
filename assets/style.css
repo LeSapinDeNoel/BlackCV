@@ -49,6 +49,28 @@ body {
   color: white;
 }
 
+/* Background brumeux */
+.grain_overlay {
+  pointer-events: none;
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 10000;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px;
+  background-image: url(/assets/img/noise.gif);
+  background-position: 0px 0px;
+  background-size: 250px;
+  opacity: 0.06;
+}
+
+/* Background brumeux Fin */
 h1, h2 {
   font-family: "Lora";
   font-weight: 600;
@@ -530,7 +552,6 @@ a {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: black;
   }
   #header .head span {
     font-size: 32px;
