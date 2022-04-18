@@ -62,14 +62,26 @@ a {
         }
     
     }
+
     .header_techno {
         font-family: 'Mukta';
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
         line-height: 25px;
-        padding-top: 30px;
         padding-left: 20px;
+    }
+
+    .body {
+        margin: 200px 0;
+
+        h1 {
+            animation: slidedown 2s;
+        }
+
+        h2 {
+            animation: slideright 2s;
+        }
     }
 }
 
@@ -261,12 +273,12 @@ a {
             margin-top: 30px;
     
             &:before {
-                top: 785px;
+                top: 1105px;
                 left: 5px;
             }
     
             &:after {
-                top: 770px;
+                top: 1090px;
                 left: 20px;
             }
         }
@@ -296,12 +308,12 @@ a {
             margin-top: 30px;
 
             &:before {
-                top: 1215px;
+                top: 1535px;
                 right: 5px;
             }
     
             &:after {
-                top: 1200px;
+                top: 1520px;
                 right: 20px;
             }
         }
@@ -429,5 +441,27 @@ a {
         line-height: 23px;
         text-align: center;
         margin: 20px 0 10px;
+    }
+}
+
+/* Animations */
+
+@keyframes slidedown {
+    0% {
+        transform: translateY(-650%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slideright {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
     }
 }

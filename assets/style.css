@@ -106,8 +106,16 @@ a {
   font-weight: 400;
   font-size: 12px;
   line-height: 25px;
-  padding-top: 30px;
   padding-left: 20px;
+}
+#header .body {
+  margin: 200px 0;
+}
+#header .body h1 {
+  animation: slidedown 2s;
+}
+#header .body h2 {
+  animation: slideright 2s;
 }
 
 #menu {
@@ -264,11 +272,11 @@ a {
   margin-top: 30px;
 }
 #experience .article_service_mjc .year:before {
-  top: 785px;
+  top: 1105px;
   left: 5px;
 }
 #experience .article_service_mjc .year:after {
-  top: 770px;
+  top: 1090px;
   left: 20px;
 }
 #experience .article_service_mjc .img_mjc {
@@ -292,11 +300,11 @@ a {
   margin-top: 30px;
 }
 #experience .article_dev_web .year:before {
-  top: 1215px;
+  top: 1535px;
   right: 5px;
 }
 #experience .article_dev_web .year:after {
-  top: 1200px;
+  top: 1520px;
   right: 20px;
 }
 #experience .article_dev_web .img_cci {
@@ -404,6 +412,24 @@ a {
   line-height: 23px;
   text-align: center;
   margin: 20px 0 10px;
+}
+
+/* Animations */
+@keyframes slidedown {
+  0% {
+    transform: translateY(-650%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes slideright {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
