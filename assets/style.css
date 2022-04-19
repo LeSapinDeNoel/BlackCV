@@ -103,6 +103,21 @@ a {
   text-decoration: none;
 }
 
+/* Scroll to top */
+.scroll_top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 20px;
+  height: auto;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.scroll_top:hover {
+  transform: rotate(15deg);
+}
+
+/* Scroll to top Fin */
 #header {
   margin-bottom: 10px;
 }
@@ -118,6 +133,9 @@ a {
 #header .head {
   padding-top: 10px;
   margin-bottom: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
 }
 #header .head span {
   margin-left: 20px;
@@ -144,8 +162,9 @@ a {
   width: 100%;
   height: 100%;
   position: fixed;
-  background-color: black;
+  background: linear-gradient(black 35%, transparent 65%);
   padding-top: 50px;
+  margin-top: -1px;
   display: none;
   z-index: 1;
 }
@@ -155,13 +174,6 @@ a {
 }
 #menu ul {
   padding-left: 20px;
-}
-#menu hr {
-  background-color: white;
-  height: 1px;
-  position: fixed;
-  bottom: 20px;
-  z-index: 0;
 }
 
 /* Menu Burger */
@@ -294,11 +306,11 @@ a {
   margin-top: 30px;
 }
 #experience .article_service_mjc .year::before {
-  top: 1105px;
+  top: 1070px;
   left: 5px;
 }
 #experience .article_service_mjc .year::after {
-  top: 1090px;
+  top: 1055px;
   left: 20px;
 }
 #experience .article_service_mjc .img_mjc {
@@ -323,11 +335,11 @@ a {
   margin-top: 30px;
 }
 #experience .article_dev_web .year::before {
-  top: 1535px;
+  top: 1500px;
   right: 5px;
 }
 #experience .article_dev_web .year::after {
-  top: 1520px;
+  top: 1485px;
   right: 20px;
 }
 #experience .article_dev_web .img_cci {
@@ -347,6 +359,7 @@ a {
   width: 320px;
   height: auto;
   margin: 50px auto;
+  user-select: none;
 }
 #wrapper_techno .cube {
   width: 150px;
@@ -486,16 +499,16 @@ a {
     margin-right: auto;
   }
   #experience .article_service_mjc .year::before {
-    top: 1075px;
+    top: 1040px;
   }
   #experience .article_service_mjc .year::after {
-    top: 1060px;
+    top: 1025px;
   }
   #experience .article_dev_web .year::before {
-    top: 1503px;
+    top: 1468px;
   }
   #experience .article_dev_web .year::after {
-    top: 1488px;
+    top: 1453px;
   }
 
   #wrapper_techno {
@@ -549,7 +562,6 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: fixed;
     top: 0;
     width: 100%;
   }
@@ -575,9 +587,11 @@ a {
     line-height: 53px;
     padding: 0 15px;
     transition: 0.4s;
+    opacity: 0.7;
   }
   #header .head #menu a:hover {
     font-weight: 500;
+    opacity: 1;
   }
   #header .head #menu ul {
     display: flex;
@@ -632,11 +646,11 @@ a {
     width: 400px;
   }
   main #experience .article_service_mjc .year::before {
-    top: 1350px;
+    top: 1285px;
     width: 150px;
   }
   main #experience .article_service_mjc .year::after {
-    top: 1335px;
+    top: 1270px;
     height: 150px;
   }
   main #experience .article_dev_web p {
@@ -646,11 +660,11 @@ a {
     width: 400px;
   }
   main #experience .article_dev_web .year::before {
-    top: 1895px;
+    top: 1830px;
     width: 150px;
   }
   main #experience .article_dev_web .year::after {
-    top: 1880px;
+    top: 1815px;
     height: 150px;
   }
   main #diplome h2 {
@@ -674,19 +688,19 @@ a {
     height: 300px;
   }
   main #experience .article_service_mjc .year::before {
-    top: 1440px;
+    top: 1377px;
     width: 150px;
   }
   main #experience .article_service_mjc .year::after {
-    top: 1425px;
+    top: 1362px;
     height: 150px;
   }
   main #experience .article_dev_web .year::before {
-    top: 1985px;
+    top: 1920px;
     width: 150px;
   }
   main #experience .article_dev_web .year::after {
-    top: 1970px;
+    top: 1905px;
     height: 150px;
   }
   main #wrapper_techno {

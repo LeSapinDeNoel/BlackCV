@@ -63,6 +63,24 @@ a {
     text-decoration: none;
 }
 
+/* Scroll to top */
+
+.scroll_top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+    transition: 0.4s;
+
+    &:hover {
+        transform: rotate(15deg);
+    }
+}
+
+/* Scroll to top Fin */
+
 #header {
     margin-bottom: 10px;
 
@@ -80,11 +98,13 @@ a {
     .head{
         padding-top: 10px;
         margin-bottom: 50px;
+        width: 100%;
+        position: fixed;
+        top: 0;
         
         span {
             margin-left: 20px;
         }
-    
     }
 
     .header_techno {
@@ -113,8 +133,9 @@ a {
     width: 100%;
     height: 100%;
     position: fixed;
-    background-color: black;
+    background: linear-gradient(black 35%, transparent 65%);
     padding-top: 50px;
+    margin-top: -1px;
     display: none;
     z-index: 1;
 
@@ -125,14 +146,6 @@ a {
 
     ul {
         padding-left: 20px;
-    }
-
-    hr {
-        background-color: white;
-        height: 1px;
-        position: fixed;
-        bottom: 20px;
-        z-index: 0;
     }
 }
 
@@ -297,12 +310,12 @@ a {
             margin-top: 30px;
     
             &::before {
-                top: 1105px;
+                top: 1070px;
                 left: 5px;
             }
     
             &::after {
-                top: 1090px;
+                top: 1055px;
                 left: 20px;
             }
         }
@@ -333,12 +346,12 @@ a {
             margin-top: 30px;
 
             &::before {
-                top: 1535px;
+                top: 1500px;
                 right: 5px;
             }
     
             &::after {
-                top: 1520px;
+                top: 1485px;
                 right: 20px;
             }
         }
@@ -364,6 +377,7 @@ a {
     width: 320px;
     height: auto;
     margin: 50px auto;
+    user-select: none;
 
     .cube {
         width: 150px;
@@ -534,11 +548,11 @@ a {
         .article_service_mjc {
             .year {
                 &::before {
-                    top: 1075px;
+                    top: 1040px;
                 }
         
                 &::after {
-                    top: 1060px;
+                    top: 1025px;
                 }
             }
         }
@@ -546,11 +560,11 @@ a {
         .article_dev_web {
             .year {
                 &::before {
-                    top: 1503px;
+                    top: 1468px;
                 }
         
                 &::after {
-                    top: 1488px;
+                    top: 1453px;
                 }
             }
         }
@@ -617,7 +631,6 @@ a {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            position: fixed;
             top: 0;
             width: 100%;
 
@@ -645,9 +658,11 @@ a {
                     line-height: 53px;
                     padding: 0 15px;
                     transition: 0.4s;
+                    opacity: 0.7;
 
                     &:hover {
                         font-weight: 500;
+                        opacity: 1;
                     }
                 }
 
@@ -730,12 +745,12 @@ a {
 
                 .year {
                     &::before {
-                        top: 1350px;
+                        top: 1285px;
                         width: 150px;
                     }
             
                     &::after {
-                        top: 1335px;
+                        top: 1270px;
                         height: 150px;
                     }
                 }
@@ -752,12 +767,12 @@ a {
 
                 .year {
                     &::before {
-                        top: 1895px;
+                        top: 1830px;
                         width: 150px;
                     }
             
                     &::after {
-                        top: 1880px;
+                        top: 1815px;
                         height: 150px;
                     }
                 }
@@ -801,12 +816,12 @@ a {
             .article_service_mjc {
                 .year {
                     &::before {
-                        top: 1440px;
+                        top: 1377px;
                         width: 150px;
                     }
             
                     &::after {
-                        top: 1425px;
+                        top: 1362px;
                         height: 150px;
                     }
                 }
@@ -815,12 +830,12 @@ a {
             .article_dev_web {
                 .year {
                     &::before {
-                        top: 1985px;
+                        top: 1920px;
                         width: 150px;
                     }
             
                     &::after {
-                        top: 1970px;
+                        top: 1905px;
                         height: 150px;
                     }
                 }

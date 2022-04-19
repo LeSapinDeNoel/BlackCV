@@ -1,27 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
     <title>Quentin Felbinger</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
     <div class="grain_overlay"></div>
+    <div class="scroll_top" onclick='window.scrollTo({top: 0, behavior: "smooth"})'>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+            <path fill="#ffffff" d="M54.63 246.6L192 109.3l137.4 137.4C335.6 252.9 343.8 256 352 256s16.38-3.125 22.62-9.375c12.5-12.5 12.5-32.75 0-45.25l-160-160c-12.5-12.5-32.75-12.5-45.25 0l-160 160c-12.5 12.5-12.5 32.75 0 45.25S42.13 259.1 54.63 246.6zM214.6 233.4c-12.5-12.5-32.75-12.5-45.25 0l-160 160c-12.5 12.5-12.5 32.75 0 45.25s32.75 12.5 45.25 0L192 301.3l137.4 137.4C335.6 444.9 343.8 448 352 448s16.38-3.125 22.62-9.375c12.5-12.5 12.5-32.75 0-45.25L214.6 233.4z"/>
+        </svg>
+    </div>
 
     <header id="header">
         <div class="head">
-            <span>QUENTIN.F</span>
+            <a href="index.html"><span>QUENTIN.F</span></a>
             <nav id="menu">
                 <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Formations</a></li>
-                    <li><a href="#">Expériences</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#experience">Expériences</a></li>
+                    <li><a href="#diplome">Formations</a></li>
+                    <li><a href="#footer">Contact</a></li>
                 </ul>
-                <hr>
             </nav>
             <input type="checkbox" id="menu_burger" name="menu_burger" onclick="burger_menu()">
                 <label for="menu_burger" class="menu_burger_style">
