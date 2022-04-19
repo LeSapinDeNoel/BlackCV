@@ -578,7 +578,7 @@ a {
     width: auto;
     height: auto;
     padding: 0;
-    background-color: transparent;
+    background: transparent;
   }
   #header .head #menu a {
     font-style: normal;
