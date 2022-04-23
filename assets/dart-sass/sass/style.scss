@@ -442,7 +442,7 @@ a {
 
         &:hover::after {
             bottom: -4px;
-            animation: 0.3s ease-out Border70;
+            animation: 0.3s ease-in-out Border70;
             width: 30%;
         }
     }
@@ -459,7 +459,7 @@ a {
 
         &:hover::after {
             bottom: -4px;
-            animation: 0.3s ease-out Border75;
+            animation: 0.3s ease-in-out Border75;
             width: 25%;
         }
     }
@@ -469,6 +469,16 @@ a {
         grid-row: 3;
         font-size: 24px;
         line-height: 31px;
+
+        &::before {
+            content: '45%';
+        }
+
+        &:hover::after {
+            bottom: -4px;
+            animation: 0.3s ease-in-out Border45;
+            width: 55%;
+        }
     }
 
     .four {
@@ -476,6 +486,16 @@ a {
         grid-row: 1;
         font-size: 36px;
         line-height: 46px;
+
+        &::before {
+            content: '60%';
+        }
+
+        &:hover::after {
+            bottom: -4px;
+            animation: 0.3s ease-in-out Border60;
+            width: 40%;
+        }
     }
 
     .five {
@@ -483,13 +503,33 @@ a {
         grid-row: 2;
         font-size: 24px;
         line-height: 31px;
+
+        &::before {
+            content: '53%';
+        }
+
+        &:hover::after {
+            bottom: -4px;
+            animation: 0.3s ease-in-out Border53;
+            width: 47%;
+        }
     }
 
     .six {
         grid-column: 2;
         grid-row: 3;
-        font-size: 36px;
+        font-size: 22px;
         line-height: 46px;
+
+        &::before {
+            content: '90%';
+        }
+
+        &:hover::after {
+            bottom: -4px;
+            animation: 0.4s ease-in-out Border90;
+            width: 10%;
+        }
     }
 }
 
@@ -615,43 +655,31 @@ a {
         .one {
             grid-column: 1;
             grid-row: 1;
-            font-size: 36px;
-            line-height: 46px;
         }
     
         .two {
             grid-column: 3;
             grid-row: 1;
-            font-size: 36px;
-            line-height: 46px;
         }
     
         .three {
             grid-column: 1;
             grid-row: 2;
-            font-size: 24px;
-            line-height: 31px;
         }
     
         .four {
             grid-column: 2;
             grid-row: 1;
-            font-size: 36px;
-            line-height: 46px;
         }
     
         .five {
             grid-column: 3;
             grid-row: 2;
-            font-size: 24px;
-            line-height: 31px;
         }
     
         .six {
             grid-column: 2;
             grid-row: 2;
-            font-size: 36px;
-            line-height: 46px;
         }
     }
 
@@ -887,43 +915,31 @@ a {
             .one {
                 grid-column: 1;
                 grid-row: 1;
-                font-size: 36px;
-                line-height: 46px;
             }
         
             .two {
                 grid-column: 3;
                 grid-row: 1;
-                font-size: 36px;
-                line-height: 46px;
             }
         
             .three {
                 grid-column: 2;
                 grid-row: 2;
-                font-size: 24px;
-                line-height: 31px;
             }
         
             .four {
                 grid-column: 2;
                 grid-row: 1;
-                font-size: 36px;
-                line-height: 46px;
             }
         
             .five {
                 grid-column: 4;
                 grid-row: 2;
-                font-size: 24px;
-                line-height: 31px;
             }
         
             .six {
                 grid-column: 3;
                 grid-row: 2;
-                font-size: 36px;
-                line-height: 46px;
             }
         }
     }
