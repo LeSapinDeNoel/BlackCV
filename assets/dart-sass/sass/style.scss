@@ -224,10 +224,6 @@ a {
 
     margin-bottom: 50px;
 
-    .detail_profile {
-        height: 160px;
-    }
-
     img {
         width: 130px;
         height: 130px;
@@ -251,10 +247,6 @@ a {
 #experience {
     margin-bottom: 30px;
 
-    .detail_mjc {
-        height: 246px;
-    }
-
     h2 {
         font-size: 30px;
         line-height: 38px;
@@ -271,7 +263,7 @@ a {
         font-weight: 500;
         font-size: 14px;
         line-height: 23px;
-        margin-top: 10px;
+        padding-top: 20px;
     }
 
     .year {
@@ -280,6 +272,7 @@ a {
         font-weight: 300;
         font-size: 13px;
         line-height: 22px;
+        position: relative;
 
         &::before {
             content: "";
@@ -311,12 +304,12 @@ a {
             margin-top: 30px;
     
             &::before {
-                top: 1070px;
+                top: -10px;
                 left: 5px;
             }
     
             &::after {
-                top: 1055px;
+                top: -25px;
                 left: 20px;
             }
         }
@@ -347,12 +340,12 @@ a {
             margin-top: 30px;
 
             &::before {
-                top: 1500px;
+                top: -10px;
                 right: 5px;
             }
     
             &::after {
-                top: 1485px;
+                top: -25px;
                 right: 20px;
             }
         }
@@ -367,6 +360,11 @@ a {
             text-align: left;
             margin-left: 20px;
         }
+    }
+
+    .detail_mjc, .detail_dev_web {
+        display: flex;
+        flex-direction: column;
     }
 
 }
@@ -617,35 +615,32 @@ a {
         }
 
         .detail_mjc, .detail_dev_web {
+            flex-direction: row;
+            justify-content: space-around;
             width: 85%;
-            margin: 50px 0;
+            margin: 100px 0;
             margin-left: auto;
             margin-right: auto;
         }
-
-        .article_service_mjc {
-            .year {
-                &::before {
-                    top: 1040px;
-                }
         
-                &::after {
-                    top: 1025px;
+        .article_service_mjc {
+            .detail_mjc {
+                flex-direction: row-reverse;
+    
+                .img_mjc {
+                    width: 1000px;
                 }
             }
         }
 
         .article_dev_web {
-            .year {
-                &::before {
-                    top: 1468px;
-                }
-        
-                &::after {
-                    top: 1453px;
+            .detail_dev_web {
+                .img_cci {
+                    width: 600px;
                 }
             }
         }
+
     }
 
     #wrapper_techno {
@@ -764,7 +759,6 @@ a {
         }
 
         #profile {
-            height: 308px;
 
             .detail_profile {
 
@@ -801,24 +795,9 @@ a {
             }
 
             .article_service_mjc {
-                .detail_mjc {
-                    height: 360px;
-                }
 
                 .img_mjc {
                     width: 400px;
-                }
-
-                .year {
-                    &::before {
-                        top: 1285px;
-                        width: 150px;
-                    }
-            
-                    &::after {
-                        top: 1270px;
-                        height: 150px;
-                    }
                 }
             }
 
@@ -829,18 +808,6 @@ a {
 
                 .img_cci {
                     width: 400px;
-                }
-
-                .year {
-                    &::before {
-                        top: 1830px;
-                        width: 150px;
-                    }
-            
-                    &::after {
-                        top: 1815px;
-                        height: 150px;
-                    }
                 }
             }
         }
@@ -868,42 +835,11 @@ a {
     main {
 
         #profile {
-            height: 400px;
 
             .detail_profile{
                 img {
                     width: 300px;
                     height: 300px;
-                }
-            }
-        }
-
-        #experience {
-            .article_service_mjc {
-                .year {
-                    &::before {
-                        top: 1377px;
-                        width: 150px;
-                    }
-            
-                    &::after {
-                        top: 1362px;
-                        height: 150px;
-                    }
-                }
-            }
-
-            .article_dev_web {
-                .year {
-                    &::before {
-                        top: 1920px;
-                        width: 150px;
-                    }
-            
-                    &::after {
-                        top: 1905px;
-                        height: 150px;
-                    }
                 }
             }
         }

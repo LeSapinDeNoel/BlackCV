@@ -298,9 +298,6 @@ a {
 #profile {
   margin-bottom: 50px;
 }
-#profile .detail_profile {
-  height: 160px;
-}
 #profile img {
   width: 130px;
   height: 130px;
@@ -321,9 +318,6 @@ a {
 #experience {
   margin-bottom: 30px;
 }
-#experience .detail_mjc {
-  height: 246px;
-}
 #experience h2 {
   font-size: 30px;
   line-height: 38px;
@@ -338,7 +332,7 @@ a {
   font-weight: 500;
   font-size: 14px;
   line-height: 23px;
-  margin-top: 10px;
+  padding-top: 20px;
 }
 #experience .year {
   font-family: "Mukta";
@@ -346,6 +340,7 @@ a {
   font-weight: 300;
   font-size: 13px;
   line-height: 22px;
+  position: relative;
 }
 #experience .year::before {
   content: "";
@@ -371,11 +366,11 @@ a {
   margin-top: 30px;
 }
 #experience .article_service_mjc .year::before {
-  top: 1070px;
+  top: -10px;
   left: 5px;
 }
 #experience .article_service_mjc .year::after {
-  top: 1055px;
+  top: -25px;
   left: 20px;
 }
 #experience .article_service_mjc .img_mjc {
@@ -400,11 +395,11 @@ a {
   margin-top: 30px;
 }
 #experience .article_dev_web .year::before {
-  top: 1500px;
+  top: -10px;
   right: 5px;
 }
 #experience .article_dev_web .year::after {
-  top: 1485px;
+  top: -25px;
   right: 20px;
 }
 #experience .article_dev_web .img_cci {
@@ -415,6 +410,10 @@ a {
 #experience .article_dev_web p {
   text-align: left;
   margin-left: 20px;
+}
+#experience .detail_mjc, #experience .detail_dev_web {
+  display: flex;
+  flex-direction: column;
 }
 
 #wrapper_techno {
@@ -623,22 +622,21 @@ a {
     display: inline;
   }
   #experience .detail_mjc, #experience .detail_dev_web {
+    flex-direction: row;
+    justify-content: space-around;
     width: 85%;
-    margin: 50px 0;
+    margin: 100px 0;
     margin-left: auto;
     margin-right: auto;
   }
-  #experience .article_service_mjc .year::before {
-    top: 1040px;
+  #experience .article_service_mjc .detail_mjc {
+    flex-direction: row-reverse;
   }
-  #experience .article_service_mjc .year::after {
-    top: 1025px;
+  #experience .article_service_mjc .detail_mjc .img_mjc {
+    width: 1000px;
   }
-  #experience .article_dev_web .year::before {
-    top: 1468px;
-  }
-  #experience .article_dev_web .year::after {
-    top: 1453px;
+  #experience .article_dev_web .detail_dev_web .img_cci {
+    width: 600px;
   }
 
   #wrapper_techno {
@@ -733,9 +731,6 @@ a {
   main h2 {
     font-size: 48px;
   }
-  main #profile {
-    height: 308px;
-  }
   main #profile .detail_profile img {
     width: 200px;
     height: 200px;
@@ -757,33 +752,14 @@ a {
   main #experience .year {
     font-size: 20px;
   }
-  main #experience .article_service_mjc .detail_mjc {
-    height: 360px;
-  }
   main #experience .article_service_mjc .img_mjc {
     width: 400px;
-  }
-  main #experience .article_service_mjc .year::before {
-    top: 1285px;
-    width: 150px;
-  }
-  main #experience .article_service_mjc .year::after {
-    top: 1270px;
-    height: 150px;
   }
   main #experience .article_dev_web p {
     font-size: 24px;
   }
   main #experience .article_dev_web .img_cci {
     width: 400px;
-  }
-  main #experience .article_dev_web .year::before {
-    top: 1830px;
-    width: 150px;
-  }
-  main #experience .article_dev_web .year::after {
-    top: 1815px;
-    height: 150px;
   }
   main #diplome h2 {
     font-size: 48px;
@@ -798,28 +774,9 @@ a {
   }
 }
 @media screen and (min-width: 1101px) {
-  main #profile {
-    height: 400px;
-  }
   main #profile .detail_profile img {
     width: 300px;
     height: 300px;
-  }
-  main #experience .article_service_mjc .year::before {
-    top: 1377px;
-    width: 150px;
-  }
-  main #experience .article_service_mjc .year::after {
-    top: 1362px;
-    height: 150px;
-  }
-  main #experience .article_dev_web .year::before {
-    top: 1920px;
-    width: 150px;
-  }
-  main #experience .article_dev_web .year::after {
-    top: 1905px;
-    height: 150px;
   }
   main #wrapper_techno {
     gap: 40px;
