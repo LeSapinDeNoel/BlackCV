@@ -53,13 +53,11 @@ td, th {
     transform: translateY(0%);
   }
 }
-@keyframes slideright {
+@keyframes Appear {
   0% {
-    transform: translateX(-100%);
-    opacity: 1;
+    opacity: 0;
   }
   100% {
-    transform: translateX(0%);
     opacity: 1;
   }
 }
@@ -226,7 +224,7 @@ a {
 }
 #header .body h2 {
   opacity: 0;
-  animation: slideright 2s forwards;
+  animation: Appear 1.5s forwards;
   animation-delay: 0.5s;
 }
 
