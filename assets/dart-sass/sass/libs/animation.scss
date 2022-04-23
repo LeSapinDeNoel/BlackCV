@@ -1,0 +1,65 @@
+/* Animations */
+
+@keyframes slidedown {
+    0% {
+        transform: translateY(-650%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slideright {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes Border70 {
+    0% {
+        width: 70%;
+    }
+
+    25% {
+        width: 60%;
+    }
+
+    50% {
+        width: 50%;
+    }
+
+    75% {
+        width: 40%;
+    }
+
+    100%{
+        width: 30%;
+    }
+}
+
+@keyframes Border75 {
+    0% {
+        width: 70%;
+    }
+
+    25% {
+        width: 60%;
+    }
+
+    50% {
+        width: 50%;
+    }
+
+    75% {
+        width: 40%;
+    }
+
+    100%{
+        width: 30%;
+    }
+}
