@@ -225,7 +225,7 @@ a {
 #header .body h2 {
   opacity: 0;
   animation: Appear 1.5s forwards;
-  animation-delay: 0.5s;
+  animation-delay: 1.5s;
 }
 
 #menu {
