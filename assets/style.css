@@ -56,9 +56,11 @@ td, th {
 @keyframes slideright {
   0% {
     transform: translateX(-100%);
+    opacity: 1;
   }
   100% {
     transform: translateX(0%);
+    opacity: 1;
   }
 }
 @keyframes Border45 {
@@ -214,13 +216,18 @@ a {
   padding-left: 20px;
 }
 #header .body {
-  margin: 200px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 85vh;
 }
 #header .body h1 {
-  animation: slidedown 2s;
+  animation: slidedown 1.5s;
 }
 #header .body h2 {
-  animation: slideright 2s;
+  opacity: 0;
+  animation: slideright 2s forwards;
+  animation-delay: 0.5s;
 }
 
 #menu {
@@ -717,9 +724,6 @@ a {
   }
   #header .head #menu hr {
     display: none;
-  }
-  #header .body {
-    margin: 250px 0;
   }
   #header .body h1, #header .body h2 {
     font-size: 48px;

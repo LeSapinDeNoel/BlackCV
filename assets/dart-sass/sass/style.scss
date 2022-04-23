@@ -118,14 +118,19 @@ a {
     }
 
     .body {
-        margin: 200px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 85vh;
 
         h1 {
-            animation: slidedown 2s;
+            animation: slidedown 1.5s;
         }
 
         h2 {
-            animation: slideright 2s;
+            opacity: 0;
+            animation: slideright 2s forwards;
+            animation-delay: 0.5s;
         }
     }
 }
@@ -741,7 +746,6 @@ a {
         }
 
         .body {
-            margin: 250px 0;
             
             h1, h2 {
                 font-size: 48px;
