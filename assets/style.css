@@ -201,6 +201,7 @@ a {
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 9999;
 }
 #header .head span {
   margin-left: 20px;
