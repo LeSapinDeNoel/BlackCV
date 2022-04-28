@@ -140,7 +140,7 @@ h1, h2 {
   font-family: "Lora";
   font-weight: 600;
   font-size: 36px;
-  padding: 0 20px;
+  padding: 0 5%;
   margin-top: 50px;
 }
 
@@ -149,8 +149,7 @@ h3 {
   font-style: normal;
   font-weight: lighter;
   font-size: 24px;
-  line-height: 31px;
-  padding: 0 20px;
+  padding: 0 5%;
 }
 
 hr {
@@ -211,8 +210,7 @@ a {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 25px;
-  padding-left: 20px;
+  padding-left: 2%;
 }
 #header .body {
   display: flex;
@@ -326,7 +324,6 @@ a {
 }
 #experience h2 {
   font-size: 30px;
-  line-height: 38px;
   text-align: right;
 }
 #experience h3 span {
@@ -337,7 +334,6 @@ a {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 23px;
   padding-top: 20px;
 }
 #experience .year {
@@ -345,7 +341,6 @@ a {
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
-  line-height: 22px;
   position: relative;
 }
 #experience .year::before {
@@ -369,6 +364,7 @@ a {
 }
 #experience .article_service_mjc .year {
   padding-left: 30px;
+  margin-left: 3%;
   margin-top: 30px;
 }
 #experience .article_service_mjc .year::before {
@@ -398,6 +394,7 @@ a {
 #experience .article_dev_web .year {
   text-align: right;
   padding-right: 30px;
+  margin-right: 3%;
   margin-top: 30px;
 }
 #experience .article_dev_web .year::before {
@@ -480,7 +477,6 @@ a {
   grid-column: 1;
   grid-row: 1;
   font-size: 36px;
-  line-height: 46px;
 }
 #wrapper_techno .one::before {
   content: "70%";
@@ -494,7 +490,6 @@ a {
   grid-column: 1;
   grid-row: 2;
   font-size: 36px;
-  line-height: 46px;
 }
 #wrapper_techno .two::before {
   content: "75%";
@@ -508,7 +503,6 @@ a {
   grid-column: 1;
   grid-row: 3;
   font-size: 24px;
-  line-height: 31px;
 }
 #wrapper_techno .three::before {
   content: "45%";
@@ -522,7 +516,6 @@ a {
   grid-column: 2;
   grid-row: 1;
   font-size: 36px;
-  line-height: 46px;
 }
 #wrapper_techno .four::before {
   content: "60%";
@@ -536,7 +529,6 @@ a {
   grid-column: 2;
   grid-row: 2;
   font-size: 24px;
-  line-height: 31px;
 }
 #wrapper_techno .five::before {
   content: "53%";
@@ -550,7 +542,6 @@ a {
   grid-column: 2;
   grid-row: 3;
   font-size: 22px;
-  line-height: 46px;
 }
 #wrapper_techno .six::before {
   content: "90%";
@@ -565,12 +556,11 @@ a {
   font-size: 30px;
 }
 #diplome .diplome_list {
-  margin: 20px 10px;
+  margin: 20px 5%;
   font-family: "Lora";
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
-  line-height: 26px;
   text-align: center;
 }
 #diplome .diplome_list div {
@@ -587,7 +577,7 @@ a {
 }
 
 #footer h2 {
-  font-size: 30px;
+  font-size: 36px;
   text-align: right;
 }
 #footer .footer_mail {
@@ -595,7 +585,6 @@ a {
   font-style: italic;
   font-weight: 500;
   font-size: 24px;
-  line-height: 31px;
   margin: 20px 10px;
   text-align: right;
 }
@@ -604,7 +593,6 @@ a {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 23px;
   text-align: center;
   margin: 20px 0 10px;
 }
@@ -706,7 +694,6 @@ a {
     font-style: normal;
     font-weight: 275;
     font-size: 32px;
-    line-height: 53px;
     padding: 0 15px;
     transition: 0.4s;
     opacity: 0.7;
