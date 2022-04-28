@@ -751,6 +751,9 @@ a {
   main #experience .article_dev_web .img_cci {
     width: 400px;
   }
+  main #diplome {
+    position: relative;
+  }
   main #diplome h2 {
     font-size: 48px;
   }
@@ -761,6 +764,15 @@ a {
   }
   main #diplome .diplome_list div {
     margin-bottom: 10px;
+  }
+  main #diplome .img_follow {
+    display: none;
+    position: absolute;
+    width: 230px;
+    height: 150px;
+    background-color: red;
+    top: 0;
+    right: 0;
   }
 }
 @media screen and (min-width: 1101px) {

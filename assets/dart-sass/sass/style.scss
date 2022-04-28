@@ -805,6 +805,8 @@ a {
         }
 
         #diplome {
+            position: relative;
+            
             h2 {
                 font-size: 48px;
             }
@@ -817,6 +819,16 @@ a {
                 div {
                     margin-bottom: 10px;
                 }
+            }
+
+            .img_follow {
+                display: none;
+                position: absolute;
+                width: 230px;
+                height: 150px;
+                background-color: red;
+                top: 0;
+                right: 0;
             }
         }
     }

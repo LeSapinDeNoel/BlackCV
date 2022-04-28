@@ -1,3 +1,41 @@
+// $(document).load($(window).bind("resize", changeMenuDisplay));
+
+// function changeMenuDisplay() {
+//     if($(window).width() > 1024) {
+//         $('#menu').css('display', 'block');
+//         console.log('coucou');
+//     }else if($(window).width() < 1024)  {
+//         $('#menu').css('display', 'none');
+//         console.log('non');
+//     }
+// }
+
+$(document).ready(function() {
+    $(".diplome_list").mousemove(function(event) {
+
+        var mouseX = event.pageX;
+        var mouseY = event.pageY;
+
+        console.log(mouseX + " , " + mouseY);
+
+        $(".img_follow").offset({
+            top : mouseY - 70,
+            left : mouseX + 50
+        });
+    })
+
+    $(".diplome_list_bac, .diplome_list_DU, .diplome_list_CCI").mouseenter(function() {
+        $(".img_follow").css("display", "block");
+    })
+
+    $(".diplome_list_bac, .diplome_list_DU, .diplome_list_CCI").mouseleave(function() {
+        $(".img_follow").css("display", "none");
+    })
+
+    
+})
+
+
 function burger_menu() {
     if($('#menu').css('display') == "none") {
         $('#menu').slideDown("slow");
@@ -6,4 +44,4 @@ function burger_menu() {
         $('#menu').slideUp("slow");
         $('.head').css("background", "transparent");
     }    
-}
+};
