@@ -3,7 +3,7 @@
 // function changeMenuDisplay() {
 //     if($(window).width() > 1024) {
 //         $('#menu').css('display', 'block');
-//         console.log('coucou');
+//         console.log('here');
 //     }else if($(window).width() < 1024)  {
 //         $('#menu').css('display', 'none');
 //         console.log('non');
@@ -16,7 +16,7 @@ $(document).ready(function() {
         var mouseX = event.pageX;
         var mouseY = event.pageY;
 
-        console.log(mouseX + " , " + mouseY);
+        // console.log(mouseX + " , " + mouseY);
 
         $(".img_follow").offset({
             top : mouseY - 70,

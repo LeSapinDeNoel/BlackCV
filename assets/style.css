@@ -305,6 +305,7 @@ a {
 #profile img {
   width: 130px;
   height: 130px;
+  margin-bottom: 10px;
 }
 #profile div {
   display: flex;
@@ -317,6 +318,9 @@ a {
   font-size: 12px;
   font-weight: normal;
   margin-left: 10px;
+}
+#profile .detail_profile {
+  flex-direction: column;
 }
 
 #experience {
@@ -575,6 +579,23 @@ a {
   border: 1px solid black;
   transition: 0.6s;
 }
+#diplome .img_follow {
+  display: none;
+  position: absolute;
+  width: 350px;
+  height: auto;
+  top: 0;
+  right: 0;
+}
+#diplome .img_bac {
+  display: none;
+}
+#diplome .img_DU {
+  display: none;
+}
+#diplome .img_CCI {
+  display: none;
+}
 
 #footer h2 {
   font-size: 36px;
@@ -598,6 +619,11 @@ a {
 }
 
 /* Responsive */
+@media screen and (min-width: 420px) {
+  #profile .detail_profile {
+    flex-direction: row;
+  }
+}
 @media screen and (min-width: 768px) {
   #profile {
     width: 85%;
@@ -764,23 +790,6 @@ a {
   }
   main #diplome .diplome_list div {
     margin-bottom: 10px;
-  }
-  main #diplome .img_follow {
-    display: none;
-    position: absolute;
-    width: 350px;
-    height: auto;
-    top: 0;
-    right: 0;
-  }
-  main #diplome .img_bac {
-    display: none;
-  }
-  main #diplome .img_DU {
-    display: none;
-  }
-  main #diplome .img_CCI {
-    display: none;
   }
 }
 @media screen and (min-width: 1101px) {
