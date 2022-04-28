@@ -747,6 +747,9 @@ a {
   main h2 {
     font-size: 48px;
   }
+  main #profile h2 {
+    padding-left: 20px;
+  }
   main #profile .detail_profile img {
     width: 200px;
     height: 200px;
