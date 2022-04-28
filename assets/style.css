@@ -206,11 +206,22 @@ a {
   margin-left: 20px;
 }
 #header .header_techno {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
   font-family: "Mukta";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  padding-left: 2%;
+  padding: 0 2%;
+}
+#header .header_techno .reseaux_soc {
+  display: flex;
+  justify-content: space-around;
+  font-size: 28px;
+}
+#header .header_techno .reseaux_soc i {
+  padding: 0 10px;
 }
 #header .body {
   display: flex;
