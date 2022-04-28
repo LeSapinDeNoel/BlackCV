@@ -24,14 +24,21 @@ $(document).ready(function() {
         });
     })
 
-    $(".diplome_list_bac, .diplome_list_DU, .diplome_list_CCI").mouseenter(function() {
-        $(".img_follow").css("display", "block");
-    })
-
     $(".diplome_list_bac, .diplome_list_DU, .diplome_list_CCI").mouseleave(function() {
         $(".img_follow").css("display", "none");
     })
 
+    $(".diplome_list_bac").mouseenter(function() {
+        $(".img_bac").css("display", "block");
+    })
+
+    $(".diplome_list_DU").mouseenter(function() {
+        $(".img_DU").css("display", "block");
+    })
+
+    $(".diplome_list_CCI").mouseenter(function() {
+        $(".img_CCI").css("display", "block");
+    })
     
 })
 

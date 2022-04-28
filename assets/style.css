@@ -768,11 +768,19 @@ a {
   main #diplome .img_follow {
     display: none;
     position: absolute;
-    width: 230px;
-    height: 150px;
-    background-color: red;
+    width: 350px;
+    height: auto;
     top: 0;
     right: 0;
+  }
+  main #diplome .img_bac {
+    display: none;
+  }
+  main #diplome .img_DU {
+    display: none;
+  }
+  main #diplome .img_CCI {
+    display: none;
   }
 }
 @media screen and (min-width: 1101px) {
