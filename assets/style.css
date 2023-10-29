@@ -112,6 +112,7 @@ td, th {
 body {
   background-color: black;
   color: white;
+  scroll-behavior: smooth;
 }
 
 /* Background brumeux */
@@ -168,8 +169,8 @@ a {
 }
 
 article {
-  margin-top: 20%;
-  margin-bottom: 20%;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
 /* Scroll to top */
@@ -226,8 +227,12 @@ article {
   justify-content: space-around;
   font-size: 28px;
 }
-#header .header_techno .reseaux_soc i {
+#header .header_techno .reseaux_soc a {
   padding: 0 10px;
+  transition: 0.4s;
+}
+#header .header_techno .reseaux_soc a:hover {
+  transform: rotate(10deg);
 }
 #header .body {
   display: flex;
@@ -316,8 +321,8 @@ article {
 }
 
 /* Fin du Menu Burger */
-#profile {
-  margin-bottom: 50px;
+#profile h1 {
+  margin-top: 0;
 }
 #profile img {
   width: 130px;
@@ -363,6 +368,9 @@ article {
   font-weight: 300;
   font-size: 13px;
   position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 #experience .year::before {
   content: "";
@@ -450,6 +458,8 @@ article {
   user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
 #wrapper_techno .cube {
   position: relative;
@@ -575,6 +585,10 @@ article {
   width: 10%;
 }
 
+#diplome {
+  margin-top: 8em;
+  margin-bottom: 8em;
+}
 #diplome h2 {
   font-size: 30px;
 }

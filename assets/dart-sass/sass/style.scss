@@ -6,6 +6,7 @@
 body {
     background-color: black;
     color: white;
+    scroll-behavior: smooth;
 }
 
 /* Background brumeux */
@@ -64,8 +65,8 @@ a {
 }
 
 article {
-    margin-top: 20%;
-    margin-bottom: 20%;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
 }
 
 /* Scroll to top */
@@ -129,8 +130,13 @@ article {
             justify-content: space-around;
             font-size: 28px;
 
-            i {
+            a {
                 padding: 0 10px;
+                transition: 0.4s;
+            }
+
+            a:hover {
+                transform: rotate(10deg);
             }
         }
     }
@@ -245,7 +251,9 @@ article {
 
 #profile {
 
-    margin-bottom: 50px;
+    h1 {
+        margin-top: 0;
+    }
 
     img {
         width: 130px;
@@ -298,6 +306,9 @@ article {
         font-weight: 300;
         font-size: 13px;
         position: relative;
+        user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
 
         &::before {
             content: "";
@@ -406,6 +417,8 @@ article {
     user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+    padding-top: 5em;
+    padding-bottom: 5em;
 
     .cube {
         position: relative;
@@ -555,6 +568,10 @@ article {
 }
 
 #diplome {
+
+    margin-top: 8em;
+    margin-bottom: 8em;
+
     h2 {
         font-size: 30px;
     }
