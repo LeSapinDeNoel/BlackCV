@@ -63,6 +63,11 @@ a {
     text-decoration: none;
 }
 
+article {
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
 /* Scroll to top */
 
 .scroll_top {
@@ -72,10 +77,11 @@ a {
     width: 20px;
     height: auto;
     cursor: pointer;
+    transform: scale(1.5);
     transition: 0.4s;
 
     &:hover {
-        transform: rotate(15deg);
+        transform: scale(2.2) rotate(15deg);
     }
 }
 
@@ -313,7 +319,7 @@ a {
 
     }
 
-    .article_service_mjc {
+    .article_right {
         h3 {
             text-align: right;
         }
@@ -334,7 +340,7 @@ a {
             }
         }
 
-        .img_mjc {
+        .img_right {
             width: 269px;
             margin-top: 20px;
             margin-right: 20px;
@@ -347,7 +353,7 @@ a {
         }
     }
 
-    .article_dev_web {
+    .article_left {
         margin-top: 50px;
 
         h3 {
@@ -371,7 +377,7 @@ a {
             }
         }
 
-        .img_cci {
+        .img_left {
             width: 268px;
             margin-top: 20px;
             margin-left: 20px;
@@ -383,7 +389,7 @@ a {
         }
     }
 
-    .detail_mjc, .detail_dev_web {
+    .detail_right, .detail_left {
         display: flex;
         flex-direction: column;
     }
@@ -398,6 +404,8 @@ a {
     height: auto;
     margin: 50px auto;
     user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 
     .cube {
         position: relative;
@@ -455,13 +463,13 @@ a {
         font-size: 36px;
 
         &::before {
-            content: '70%';
+            content: '90%';
         }
 
         &:hover::after {
             bottom: -4px;
-            animation: 0.3s ease-in-out Border70;
-            width: 30%;
+            animation: 0.3s ease-in-out Border90;
+            width: 10%;
         }
     }
 
@@ -484,23 +492,23 @@ a {
     .three {
         grid-column: 1;
         grid-row: 3;
-        font-size: 24px;
+        font-size: 28px;
 
         &::before {
-            content: '45%';
+            content: '53%';
         }
 
         &:hover::after {
             bottom: -4px;
-            animation: 0.3s ease-in-out Border45;
-            width: 55%;
+            animation: 0.3s ease-in-out Border53;
+            width: 47%;
         }
     }
 
     .four {
         grid-column: 2;
         grid-row: 1;
-        font-size: 36px;
+        font-size: 24px;
 
         &::before {
             content: '60%';
@@ -594,6 +602,10 @@ a {
     .img_CCI {
         display: none;
     }
+
+    .img_CCIStrass {
+        display: none;
+    }
 }
 
 #footer {
@@ -655,7 +667,7 @@ a {
             display: inline;
         }
 
-        .detail_mjc, .detail_dev_web {
+        .detail_right, .detail_left {
             flex-direction: row;
             justify-content: space-around;
             width: 85%;
@@ -664,19 +676,19 @@ a {
             margin-right: auto;
         }
         
-        .article_service_mjc {
-            .detail_mjc {
+        .article_right {
+            .detail_right {
                 flex-direction: row-reverse;
     
-                .img_mjc {
+                .img_right {
                     width: 1000px;
                 }
             }
         }
 
-        .article_dev_web {
-            .detail_dev_web {
-                .img_cci {
+        .article_left {
+            .detail_left {
+                .img_left {
                     width: 600px;
                 }
             }
@@ -827,7 +839,7 @@ a {
                 font-size: 36px;
             }
 
-            .article_service_mjc .detail_mjc {
+            .article_right .detail_right {
                 p {
                     font-size: 24px;
                 }
@@ -837,19 +849,19 @@ a {
                 font-size: 20px;
             }
 
-            .article_service_mjc {
+            .article_right {
 
-                .img_mjc {
+                .img_right {
                     width: 400px;
                 }
             }
 
-            .article_dev_web {
+            .article_left {
                 p {
                     font-size: 24px;
                 }
 
-                .img_cci {
+                .img_left {
                     width: 400px;
                 }
             }
@@ -866,6 +878,9 @@ a {
                 width: 60%;
                 margin-right: auto;
                 overflow: hidden;
+                user-select: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
 
                 div {
                     margin-bottom: 10px;

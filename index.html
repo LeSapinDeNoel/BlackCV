@@ -17,9 +17,13 @@
 <body>
 
     <div class="grain_overlay"></div>
-    <div class="scroll_top" onclick='window.scrollTo({top: 0, behavior: "smooth"})'>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-            <path fill="#ffffff" d="M54.63 246.6L192 109.3l137.4 137.4C335.6 252.9 343.8 256 352 256s16.38-3.125 22.62-9.375c12.5-12.5 12.5-32.75 0-45.25l-160-160c-12.5-12.5-32.75-12.5-45.25 0l-160 160c-12.5 12.5-12.5 32.75 0 45.25S42.13 259.1 54.63 246.6zM214.6 233.4c-12.5-12.5-32.75-12.5-45.25 0l-160 160c-12.5 12.5-12.5 32.75 0 45.25s32.75 12.5 45.25 0L192 301.3l137.4 137.4C335.6 444.9 343.8 448 352 448s16.38-3.125 22.62-9.375c12.5-12.5 12.5-32.75 0-45.25L214.6 233.4z"/>
+    <div class="scroll_top" onclick='window.scrollTo({top: 0, behavior: "smooth"})'>       
+        <svg fill="#ffffff" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+                <path d="M15.997 13.374l-7.081 7.081L7 18.54l8.997-8.998 9.003 9-1.916 1.916z"></path>
+            </g>
         </svg>
     </div>
 
@@ -65,11 +69,9 @@
                 <p>
                     Passionné par l’informatique en général, j’ai découvert le monde du développement web
                     en autodidacte grâce à différentes formations en ligne. <br/>
-                    Inscrit depuis octobre 2020 à la formation proposée par la CCI de Colmar, 
-                    mon appétence pour le code s'est affinée. <br/>
-                    Je souhaite approfondir et découvrir de nouvelles technologies. 
-                    C'est pourquoi je me suis inscrit à un bac + 3 : "Concepteur - Développeur
-                    d'Applications".
+                    Titulaire du diplôme Concepteur Développeur d'Application obtenu en 2023 à la CCI de strasbourg.<br/>
+                    Je suis toujours à la conquête de nouveaux projets et à la découverte de nouvelles technologies dans le domaine du développement.
+                    <!-- C'est en forgeant que l'on devient forgerons. -->
                 </p>
             </div>
         </article>
@@ -79,13 +81,13 @@
 
             <h2>DES EXPERIENCES</h2>
 
-            <article class="article_service_mjc">
+            <article class="article_right">
                 <h3>Service civique - <span>Cinéma en MJC</span></h3>
 
                 <div class="year">ANNEE 2019-2020</div>
 
-                <div class="detail_mjc">
-                    <div class="img_mjc">
+                <div class="detail_right">
+                    <div class="img_right">
                         <img src="assets/img/bouilloire.jpg" alt="La Bouilloire Marcko">
                     </div>
                     <p>
@@ -98,20 +100,35 @@
 
             </article>
             
-            <article class="article_dev_web">
+            <article class="article_left">
                 <h3>Apprenti Dev Web<span> - CCI Colmar</span></h3>
                 <div class="year">ANNEES 2020-2022</div>
 
-                <div class="detail_dev_web">
-                    <div class="img_cci">
+                <div class="detail_left">
+                    <div class="img_left">
                         <img src="assets/img/CCI.jpg" alt="CCI de Colmar">
                     </div>
                     <p>
-                        Lors de mon apprentissage dans une PME de commerce, je me suis familiarisé avec prestashop que j'allais
+                        Lors de mon apprentissage dans une PME de commerce, je me suis familiarisé avec le CMS prestashop que j'allais
                         étudier en fin de formation.<br> 
-                        Fiche produit et déclinaison sont deux points qui 
-                        ne me réservent plus de secret. <br/> De même, j'ai appris en amont du cursus l'existence
-                        et le fonctionnement de base des modules.
+                        J'ai pu réaliser un module de gestion de demande de devis pour l'entreprise qui m'a accompagné durant cet apprentissage.
+                    </p>
+                </div>
+
+            </article>
+
+            <article class="article_right">
+                <h3>Apprenti Concépteur d'application<span> - Cinéma en MJC</span></h3>
+
+                <div class="year">ANNEE 2022-2023</div>
+
+                <div class="detail_right">
+                    <div class="img_right">
+                        <img src="assets/img/cciStrass.jpg" alt="CCI de Strassbourg">
+                    </div>
+                    <p>
+                        Pour mon apprentissage en tant que concépteur développeur d'application l'entreprise 3CGEST m'a permis de perfectionner mes connaissances dans le monde du digital et de l'entreprise.
+                        <br>
                     </p>
                 </div>
 
@@ -123,8 +140,8 @@
         <div id="wrapper_techno">
             <span class="cube one">PHP</span>
             <span class="cube two">Figma</span>
-            <span class="cube three">Symfony</span>
-            <span class="cube four">Jquery</span>
+            <span class="cube three">Laravel</span>
+            <span class="cube four">Javascript</span>
             <span class="cube five">Prestashop</span>
             <span class="cube six">HTML - CSS</span>
         </div>
@@ -136,19 +153,24 @@
             <div class="diplome_list">
                 <div class="diplome_list_bac">Baccalauréat Scientifique - Lycée Dr. Koeberlé</div>
                 <div class="diplome_list_DU">DU Tremplin Réussite - IUT Robert Schuman</div>
-                <div class="diplome_list_CCI">Developpeur Web PHP - CCI Colmar ( en cours )</div>
+                <div class="diplome_list_CCI">Developpeur Web PHP - CCI Colmar</div>
+                <div class="diplome_list_cciStrass">Concépteur développeur d'application - CCI Strasbourg</div>
             </div>
 
             <div class="img_follow img_bac">
-                <img src="/assets/img/koeb.jpg" alt="mjc">
+                <img src="/assets/img/koeb.jpg" alt="koeb">
             </div>
 
             <div class="img_follow img_DU">
-                <img src="/assets/img/iut_robert.jpg" alt="mjc">
+                <img src="/assets/img/iut_robert.jpg" alt="du">
             </div>
 
             <div class="img_follow img_CCI">
-                <img src="/assets/img/CCI.jpg" alt="mjc">
+                <img src="/assets/img/CCI.jpg" alt="cci colmar">
+            </div>
+
+            <div class="img_follow img_CCIStrass">
+                <img src="/assets/img/cciStrass.jpg" alt="cci colmar">
             </div>
 
         </section>
@@ -160,11 +182,12 @@
         <h2>CONTACT</h2>
 
         <div class="footer_mail">
-            <a href="mail:quentin.felbinger@gmail.com">quentin.felbinger@gmail.com</a>
+            <a href="mail:quentin@qfelbinger.fr">quentin@qfelbinger.fr</a>
         </div>
 
         <p>copyright 2022</p>
 
+        <!-- 02 -->
     </footer>
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

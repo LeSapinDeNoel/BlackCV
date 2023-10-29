@@ -167,6 +167,11 @@ a {
   text-decoration: none;
 }
 
+article {
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
 /* Scroll to top */
 .scroll_top {
   position: fixed;
@@ -175,10 +180,11 @@ a {
   width: 20px;
   height: auto;
   cursor: pointer;
+  transform: scale(1.5);
   transition: 0.4s;
 }
 .scroll_top:hover {
-  transform: rotate(15deg);
+  transform: scale(2.2) rotate(15deg);
 }
 
 /* Scroll to top Fin */
@@ -374,62 +380,62 @@ a {
   position: absolute;
   z-index: 0;
 }
-#experience .article_service_mjc h3 {
+#experience .article_right h3 {
   text-align: right;
 }
-#experience .article_service_mjc .year {
+#experience .article_right .year {
   padding-left: 30px;
   margin-left: 3%;
   margin-top: 30px;
 }
-#experience .article_service_mjc .year::before {
+#experience .article_right .year::before {
   top: -10px;
   left: 5px;
 }
-#experience .article_service_mjc .year::after {
+#experience .article_right .year::after {
   top: -25px;
   left: 20px;
 }
-#experience .article_service_mjc .img_mjc {
+#experience .article_right .img_right {
   width: 269px;
   margin-top: 20px;
   margin-right: 20px;
   margin-left: auto;
 }
-#experience .article_service_mjc p {
+#experience .article_right p {
   text-align: right;
   margin-right: 20px;
 }
-#experience .article_dev_web {
+#experience .article_left {
   margin-top: 50px;
 }
-#experience .article_dev_web h3 {
+#experience .article_left h3 {
   text-align: left;
 }
-#experience .article_dev_web .year {
+#experience .article_left .year {
   text-align: right;
   padding-right: 30px;
   margin-right: 3%;
   margin-top: 30px;
 }
-#experience .article_dev_web .year::before {
+#experience .article_left .year::before {
   top: -10px;
   right: 5px;
 }
-#experience .article_dev_web .year::after {
+#experience .article_left .year::after {
   top: -25px;
   right: 20px;
 }
-#experience .article_dev_web .img_cci {
+#experience .article_left .img_left {
   width: 268px;
   margin-top: 20px;
   margin-left: 20px;
 }
-#experience .article_dev_web p {
+#experience .article_left p {
   text-align: left;
   margin-left: 20px;
 }
-#experience .detail_mjc, #experience .detail_dev_web {
+#experience .detail_right, #experience .detail_left {
   display: flex;
   flex-direction: column;
 }
@@ -442,6 +448,8 @@ a {
   height: auto;
   margin: 50px auto;
   user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 #wrapper_techno .cube {
   position: relative;
@@ -494,12 +502,12 @@ a {
   font-size: 36px;
 }
 #wrapper_techno .one::before {
-  content: "70%";
+  content: "90%";
 }
 #wrapper_techno .one:hover::after {
   bottom: -4px;
-  animation: 0.3s ease-in-out Border70;
-  width: 30%;
+  animation: 0.3s ease-in-out Border90;
+  width: 10%;
 }
 #wrapper_techno .two {
   grid-column: 1;
@@ -517,20 +525,20 @@ a {
 #wrapper_techno .three {
   grid-column: 1;
   grid-row: 3;
-  font-size: 24px;
+  font-size: 28px;
 }
 #wrapper_techno .three::before {
-  content: "45%";
+  content: "53%";
 }
 #wrapper_techno .three:hover::after {
   bottom: -4px;
-  animation: 0.3s ease-in-out Border45;
-  width: 55%;
+  animation: 0.3s ease-in-out Border53;
+  width: 47%;
 }
 #wrapper_techno .four {
   grid-column: 2;
   grid-row: 1;
-  font-size: 36px;
+  font-size: 24px;
 }
 #wrapper_techno .four::before {
   content: "60%";
@@ -607,6 +615,9 @@ a {
 #diplome .img_CCI {
   display: none;
 }
+#diplome .img_CCIStrass {
+  display: none;
+}
 
 #footer h2 {
   font-size: 36px;
@@ -652,7 +663,7 @@ a {
   #experience h3 span {
     display: inline;
   }
-  #experience .detail_mjc, #experience .detail_dev_web {
+  #experience .detail_right, #experience .detail_left {
     flex-direction: row;
     justify-content: space-around;
     width: 85%;
@@ -660,13 +671,13 @@ a {
     margin-left: auto;
     margin-right: auto;
   }
-  #experience .article_service_mjc .detail_mjc {
+  #experience .article_right .detail_right {
     flex-direction: row-reverse;
   }
-  #experience .article_service_mjc .detail_mjc .img_mjc {
+  #experience .article_right .detail_right .img_right {
     width: 1000px;
   }
-  #experience .article_dev_web .detail_dev_web .img_cci {
+  #experience .article_left .detail_left .img_left {
     width: 600px;
   }
 
@@ -776,19 +787,19 @@ a {
   main #experience h3 {
     font-size: 36px;
   }
-  main #experience .article_service_mjc .detail_mjc p {
+  main #experience .article_right .detail_right p {
     font-size: 24px;
   }
   main #experience .year {
     font-size: 20px;
   }
-  main #experience .article_service_mjc .img_mjc {
+  main #experience .article_right .img_right {
     width: 400px;
   }
-  main #experience .article_dev_web p {
+  main #experience .article_left p {
     font-size: 24px;
   }
-  main #experience .article_dev_web .img_cci {
+  main #experience .article_left .img_left {
     width: 400px;
   }
   main #diplome {
@@ -801,6 +812,9 @@ a {
     width: 60%;
     margin-right: auto;
     overflow: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
   }
   main #diplome .diplome_list div {
     margin-bottom: 10px;

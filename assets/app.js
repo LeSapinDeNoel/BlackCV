@@ -24,7 +24,7 @@ $(document).ready(function() {
         });
     })
 
-    $(".diplome_list_bac, .diplome_list_DU, .diplome_list_CCI").mouseleave(function() {
+    $(".diplome_list_bac, .diplome_list_DU, .diplome_list_CCI, .diplome_list_cciStrass").mouseleave(function() {
         $(".img_follow").css("display", "none");
     })
 
@@ -38,6 +38,10 @@ $(document).ready(function() {
 
     $(".diplome_list_CCI").mouseenter(function() {
         $(".img_CCI").css("display", "block");
+    })
+
+    $(".diplome_list_cciStrass").mouseenter(function() {
+        $(".img_CCIStrass").css("display", "block");
     })
     
 })
